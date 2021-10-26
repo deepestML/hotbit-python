@@ -1,2 +1,2 @@
 # hotbit-python
-Unofficial Python Wrapper for Hotbit API
+Unofficial Python SDK for Hotbit API
