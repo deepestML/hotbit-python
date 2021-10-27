@@ -5,7 +5,7 @@ from typing import List
 
 class MarketData(HotbitBaseRestApi):
     def __init__(self, url: str = "https://api.hotbit.io", api_level: int = 2):
-        super().__init__(api_key="", secret_key="", url=url, api_level=api_level)
+        super().__init__(key="", secret="", url=url, api_level=api_level)
 
     def get_kline(self, symbol: str, start_time: str, end_time: str, interval: str) -> List[list]:
         """
