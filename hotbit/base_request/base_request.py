@@ -58,13 +58,13 @@ class HotbitBaseRestApi(object):
         else:
             response_data = requests.request(method, url, timeout=timeout)
 
-        return self._check_response_data(response_data)
+        return self.__check_response_data(response_data)
 
     def _set_permission_level(self, permission_level):
         self.url = self.url_api_level + f"/p{permission_level}"
 
     @staticmethod
-    def _check_response_data(response_data):
+    def __check_response_data(response_data):
 
         if response_data.status_code == 200:
             try:
