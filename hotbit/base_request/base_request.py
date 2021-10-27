@@ -7,13 +7,17 @@ import json
 
 class HotbitBaseRestApi(object):
     def __init__(
-        self, key: str, secret: str, url: str = "https://api.hotbit.io", api_level: int = 2
+        self,
+        key: str = "",
+        secret: str = "",
+        url: str = "https://api.hotbit.io",
+        api_level: int = 2,
     ):
         """
 
         Args:
-            key (str): hotbit api key
-            secret (str): hotbit api secret
+            key (str, optional): hotbit api key
+            secret (str, optional): hotbit api secret
             url (str, optional): hotbit api url. Defaults to "https://api.hotbit.io".
             api_level (int, optional): api interaction level. Defaults to 2.
         """
